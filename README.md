@@ -1,4 +1,4 @@
-#SC INI UPDATE DARI SC SETAN
+#SC crack
 ```
-ENJOY
+#scrip dark spesiasl bulan novber
 ```
