@@ -364,7 +364,7 @@ def id_teman():
 		print logo
 		r=requests.get("https://graph.facebook.com/me/friends?access_token="+toket)
 		z=json.loads(r.text)
-		jalan('\033[1;91m[✺] \033[1;92mGet all friend id \033[1;97m...')
+		jalan('\033[1;91m[✺] \033[1;92mmencari id teman \033[1;97m...')
 		print 42*"\033[1;97m═"
 		bz = open('out/id_teman.txt','w')
 		for a in z['data']:
@@ -373,7 +373,7 @@ def id_teman():
 			print ("\r\033[1;97m[ \033[1;92m"+str(len(idteman))+"\033[1;97m ]\033[1;97m=> \033[1;97m"+a['id']),;sys.stdout.flush();time.sleep(0.0001)
 		bz.close()
 		print '\r\033[1;91m[\033[1;96m✓\033[1;91m] \033[1;92mSuccessfully get id \033[1;97m....'
-		print"\r\033[1;91m[+] \033[1;92mTotal ID \033[1;91m: \033[1;97m%s"%(len(idteman))
+		print"\r\033[1;91m[+] \033[1;92mTotal ID USER \033[1;91m: \033[1;97m%s"%(len(idteman))
 		done = raw_input("\r\033[1;91m[+] \033[1;92mSave file with name\033[1;91m :\033[1;97m ")
 		os.rename('out/id_teman.txt','out/'+done)
 		print("\r\033[1;91m[+] \033[1;92mFile saved \033[1;91m: \033[1;97mout/"+done)
